@@ -3,7 +3,7 @@
     "description": "WhatsApp driver for Botman.io for chat-api.com, based in the source of Ramil",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Victor Manuel Agudelo",
