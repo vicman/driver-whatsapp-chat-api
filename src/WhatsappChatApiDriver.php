@@ -134,7 +134,7 @@ class WhatsappChatApiDriver extends HttpDriver
         $result =  $this->http->post($this->buildApiUrl($this->endpoint), [], $payload);
         //VMA
 		if (false == $result->isOk()){
-			$result   =  file_get_contents(  $this->buildApiUrl($this->endpoint), false,$options );
+			$result   =  $this->sendPost($payload);
 			
 		}
 		return $result;	
@@ -162,7 +162,7 @@ class WhatsappChatApiDriver extends HttpDriver
                                             )
         
                                ]);
-		$body = json_decode( file_get_contents(  $this->buildApiUrl($this->endpoint), false,$options ) );
+		$body =  file_get_contents(  $this->buildApiUrl($this->endpoint), false,$options ) ;
         return new Response((string) $body, 200, []);
 
 		
@@ -200,7 +200,7 @@ class WhatsappChatApiDriver extends HttpDriver
 		 $result =  $this->http->post($this->buildApiUrl($endpoint), [], $parameters);
         //VMA
 		if (false == $result->isOk()){
-			$result =  file_get_contents(  $this->buildApiUrl($this->endpoint), false,$options );
+			$result =  $this->sendPost($parameters);
 		}
 		return $result;
 		

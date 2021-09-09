@@ -1,9 +1,11 @@
 {
     "name": "vicman/driver-whatsapp-chat-api",
     "description": "WhatsApp driver for Botman.io for chat-api.com, based in the source of Ramil",
+    "keywords": ["whatsapp","php","library"],
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
+    "homepage": "https://github.com/vicman/driver-whatsapp-chat-api",
     "authors": [
         {
             "name": "Victor Manuel Agudelo",
